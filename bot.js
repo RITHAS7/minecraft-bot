@@ -14,9 +14,6 @@ bot.once('spawn', () => {
   console.log('🤖 Bot has joined the world!')
 })
 
-
-bot.loadPlugin(pathfinder)
-
 bot.on('chat', (username, message) => {
   if (message === 'follow me') {
     const player = bot.players[username]
